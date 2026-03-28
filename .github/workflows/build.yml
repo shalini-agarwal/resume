@@ -1,4 +1,9 @@
 name: Compile and upload résumé PDF
+
+permissions:
+    contents: write
+    pages: write
+
 on:
     push:
         branches:
