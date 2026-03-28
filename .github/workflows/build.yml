@@ -47,3 +47,4 @@ jobs:
                   BRANCH: gh-pages
                   FOLDER: build
                   CLEAN: true
+                  GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
