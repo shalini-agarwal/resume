@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks, hyperfootnotes=false, pdfpagemode=UseNone]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\usepackage[sfdefault]{FiraSans}
+% \setlength{\multicolsep}{-3.0pt}
+\hypersetup{hidelinks}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small \raggedright{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-0pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\newResumeSubheading}[2]{
+\vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2}
+      % \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-1pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{pdfcreator={}, pdftoolbar=false, pdfmenubar=false}
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jai Kumar Dewani} \\ \vspace{1pt}
+    % 123 Street Name, Town, State 12345 \\ 
+\small 9340422023 \quad \textbullet \quad
+\href{mailto:jai.dewani.99@gmail.com}{jai.dewani.99@gmail.com} \quad \textbullet \quad
+\href{https://www.linkedin.com/in/jai-dewani/}{linkedin.com/in/jai-dewani} \quad \textbullet \quad
+\href{https://github.com/jai-dewani}{github.com/jai-dewani}
+        
+    % \small \raisebox{-0.1\height}\faPhone\ 9340422023 ~ 
+    % \raisebox{-0.2\height}\faEnvelope\ \href{mailto:jai.dewani.99@gmail.com}{ jai.dewani.99@gmail.com} ~ 
+    % \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/jai-dewani/}{ linkedin.com/in/jai-dewani}  ~
+    % \raisebox{-0.2\height}\faGithub\ \href{https://github.com/jai-dewani}{ github.com/jai-dewani}
+    % \vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\newResumeSubheading
+    {Carl Zeiss - Vision Care R\&D and Technologies}{Bengaluru, Karnataka, India}
+    % {Senior Software Design Engineer \quad | \quad Software Design Engineer \quad | \quad Software Engineer}{June 2021 -- Present}
+    \vspace{-14pt}
+    % Senior Software Design Engineer
+    \resumeSubSubheading{Senior Software Design Engineer}{Jan 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Leading Refraction Unit architecture and feature roadmap, ensuring scalable long-term platform design.}
+        \resumeItem{Driving product–engineering alignment to deliver next-generation optometry solutions.}
+        \resumeItem{Authored medical-system integration documentation to streamline release processes and reduce cross-team ambiguity.}
+    \resumeItemListEnd
+
+    % Software Design Engineer
+    \resumeSubSubheading{Software Design Engineer}{July 2022 -- Dec 2024}
+    \resumeItemListStart
+        \resumeItem{Led VISUCORE R1.1 delivery, coordinating cross-team technical decisions and workflows.}
+        \resumeItem{Owned migration of 15+ legacy .NET Framework 4.8 modules to .NET 8, reducing startup time by 22\% and improving security posture.}
+        \resumeItem{Built an event-queue command-coalescing system to merge high-frequency user interactions, cutting hardware execution time by 90\% and improving UX.}
+        \resumeItem{Built a C++ interop wrapper that stabilized hardware communication and reduced integration effort by 30\%.}
+        \resumeItem{Contributed to hiring processes for both early-career and experienced engineers, strengthening overall engineering capability.}
+    \resumeItemListEnd
+
+    % Software Engineer
+    \resumeSubSubheading{Software Engineer}{June 2021 -- June 2022}
+    \resumeItemListStart
+        \resumeItem{Improved engineering velocity by upgrading mocking infrastructure, cutting test runtime by 80\% and reducing reliance on 3rd-party services.}
+        \resumeItem{Drove alignment across software, hardware, and product teams to establish clean, extensible API contracts.}
+        \resumeItem{Integrated gRPC for IPC between services, reducing coupling and enabling parallel development across modules.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology, Naya Raipur}{August 2017 -- June 2021}
+      {Bachelor of Technology in Computer Science}{Naya Raipur, Chhattisgarh India}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \newResumeSubheading
+            {\textbf{Password Manager System} $|$ \emph{C\#}}{Mar 2025 - Sep 2025}
+            \resumeItemListStart
+                \resumeItem{Extended Password Manager compatibility to VC500-connected VTS devices, enabling secure credential handling across the ecosystem.}
+                \resumeItem{Owned requirement clarification, solution design, and implementation across teams.}
+                \resumeItem{Engineered a robust restart notification framework, improving system observability and reliability.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Subjective Refraction Platform} $|$ \emph{C\#, Angular}  $|$ \href{https://www.zeiss.com/vision-care/int/eye-care-professionals/equipment/refraction/combined-refraction-unit.html}{VISUCORE Product Page}}{Jan 2021 - Current}
+            \resumeItemListStart
+                \resumeItem{Owned the development of visual acuity testing module for market releases - R1 and R1.1}
+                \resumeItem{Orchestrated the design of an asynchronous Refraction module, improving workflow performance by 28\%.}
+                \resumeItem{Implemented lock-and-release mutual-exclusion mechanism, improving system stability.}
+                \resumeItem{Introduced atomic command execution guarantees, simplifying concurrent workflows and reducing developer cognitive load.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \textbf{Languages}{: C\#, Python, JavaScript, TypeScript } \\
+     \vspace{1pt}
+     \textbf{Frameworks}{: .NET 8, .NET Framework, ASP.NET, WPF, NUnit, Node.js, gRPC, Angular, React} \\
+     \vspace{1pt}
+     \textbf{Developer Tools}{: Azure, MSBuild, MySQL, SonarQube, Blackduck, IRIUS Risk, Docker, GitHub Actions, CI/CD} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+\begin{itemize}[leftmargin=0.2in]
+  \achievementItem{Recognized with the \textbf{Ownership Spirit} award (2025 Zeiss offsite) for leading resolution of high-impact system-blocking customer issues.}
+  \achievementItem{Speaker at FOSS Conference on how Zeiss leverages and contributes to open-source frameworks.}
+  \achievementItem{Contributed to open-source projects including Excalidraw and Microsoft PowerToys.}
+  \achievementItem{Mentored and judged 100+ teams at national hackathons including HackCBS, HackOn, and DotSlash.}
+  \achievementItem{Qualified \textbf{ACM ICPC Regionals} (Top 100 Nationwide across 2019–2020).}
+\end{itemize}
+
+
+\end{document}
+\phantom{}
