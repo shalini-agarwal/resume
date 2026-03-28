@@ -10,22 +10,20 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
+\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks, hyperfootnotes=false, pdfpagemode=UseNone]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{tabularx}
 \usepackage{fontawesome5}
-\usepackage{ragged2e}
-\usepackage[none]{hyphenat}
-\usepackage[sfdefault]{FiraSans}
-% \setlength{\multicolsep}{-3.0pt}
-\hypersetup{hidelinks}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
-\usepackage{xcolor}
-\hypersetup{colorlinks,urlcolor=blue}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -36,6 +34,7 @@
 
 % serif
 % \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -45,9 +44,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.4in}
-\addtolength{\evensidemargin}{-0.4in}
-\addtolength{\textwidth}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.4in}
 
@@ -68,14 +67,8 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small \raggedright{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\achievementItem}[1]{
   \item\small{
-    {#1 \vspace{-6pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -86,18 +79,10 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-0pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\newResumeSubheading}[2]{
-\vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2}
-      % \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -111,139 +96,132 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2} \\
+      \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem[1]}{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\justify \begin{itemize} \vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\hypersetup{pdfcreator={}, pdftoolbar=false, pdfmenubar=false}
 \begin{document}
-
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    {\Huge \scshape Jai Kumar Dewani} \\ \vspace{1pt}
-    % 123 Street Name, Town, State 12345 \\ 
-\small 9340422023 \quad \textbullet \quad
-\href{mailto:jai.dewani.99@gmail.com}{jai.dewani.99@gmail.com} \quad \textbullet \quad
-\href{https://www.linkedin.com/in/jai-dewani/}{linkedin.com/in/jai-dewani} \quad \textbullet \quad
-\href{https://github.com/jai-dewani}{github.com/jai-dewani}
-        
-    % \small \raisebox{-0.1\height}\faPhone\ 9340422023 ~ 
-    % \raisebox{-0.2\height}\faEnvelope\ \href{mailto:jai.dewani.99@gmail.com}{ jai.dewani.99@gmail.com} ~ 
-    % \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/jai-dewani/}{ linkedin.com/in/jai-dewani}  ~
-    % \raisebox{-0.2\height}\faGithub\ \href{https://github.com/jai-dewani}{ github.com/jai-dewani}
-    % \vspace{-8pt}
+    {\Huge \scshape Shalini Agarwal} \\ \vspace{1pt} \vspace{4pt}
+    \small \href{tel:7168084857}{(716) 808-4857}
+    \href{shalini.agarwal929@gmail.com}{$\vert$   {shalini.agarwal929@gmail.com}}
+    \href{https://www.linkedin.com/in/shalini-agarwal/}{$\vert$  {linkedin.com/in/shalini-agarwal/}}
+    \href{https://github.com/shalini-agarwal}{$\vert$ {github.com/shalini-agarwal}}
+    \vspace{-2pt}
 \end{center}
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
+\begin{center}
+\textit{Over 5 years of software, research \& data engineering experience; excited for software development roles} 
+\end{center}
+\vspace{-16pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
 \resumeSubHeadingListStart
-
-\newResumeSubheading
-    {Carl Zeiss - Vision Care R\&D and Technologies}{Bengaluru, Karnataka, India}
-    % {Senior Software Design Engineer \quad | \quad Software Design Engineer \quad | \quad Software Engineer}{June 2021 -- Present}
-    \vspace{-14pt}
-    % Senior Software Design Engineer
-    \resumeSubSubheading{Senior Software Design Engineer}{Jan 2025 -- Present}
-    \resumeItemListStart
-        \resumeItem{Leading Refraction Unit architecture and feature roadmap, ensuring scalable long-term platform design.}
-        \resumeItem{Driving product–engineering alignment to deliver next-generation optometry solutions.}
-        \resumeItem{Authored medical-system integration documentation to streamline release processes and reduce cross-team ambiguity.}
-    \resumeItemListEnd
-
-    % Software Design Engineer
-    \resumeSubSubheading{Software Design Engineer}{July 2022 -- Dec 2024}
-    \resumeItemListStart
-        \resumeItem{Led VISUCORE R1.1 delivery, coordinating cross-team technical decisions and workflows.}
-        \resumeItem{Owned migration of 15+ legacy .NET Framework 4.8 modules to .NET 8, reducing startup time by 22\% and improving security posture.}
-        \resumeItem{Built an event-queue command-coalescing system to merge high-frequency user interactions, cutting hardware execution time by 90\% and improving UX.}
-        \resumeItem{Built a C++ interop wrapper that stabilized hardware communication and reduced integration effort by 30\%.}
-        \resumeItem{Contributed to hiring processes for both early-career and experienced engineers, strengthening overall engineering capability.}
-    \resumeItemListEnd
-
-    % Software Engineer
-    \resumeSubSubheading{Software Engineer}{June 2021 -- June 2022}
-    \resumeItemListStart
-        \resumeItem{Improved engineering velocity by upgrading mocking infrastructure, cutting test runtime by 80\% and reducing reliance on 3rd-party services.}
-        \resumeItem{Drove alignment across software, hardware, and product teams to establish clean, extensible API contracts.}
-        \resumeItem{Integrated gRPC for IPC between services, reducing coupling and enabling parallel development across modules.}
-    \resumeItemListEnd
-
+    \item{\textbf{Languages}{: Python, HTML, CSS, JavaScript, PostgreSQL, Java, C++}}
+    \vspace{-5pt}
+    \item{\textbf{Tools \& Technologies}{: Jupyter, Amazon Web Services (AWS), OCR, Power BI, Linux, Docker, Unit Testing}}
+    \vspace{-5pt}
+    \item{\textbf{Libraries \& Frameworks}{: NumPy, Pandas, NLTK, Matplotlib, Flask, CI/CD, Spring Boot, Agile, Rasa}}
+ \resumeSubHeadingListEnd
+\vspace{-14pt}
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {The Research Foundation of SUNY }{July'24 - Present}
+      {\textbf{Research Software Engineer} $|$ GCP, SDLC, FastAPI, GenAI, Python, WebSocket}{Buffalo, New York}
+      \resumeItemListStart
+        \resumeItem {Designed \& implemented backend services for a real-time conversational system, orchestrating streaming speech-to-text, LLM-based response generation, \& WebSocket delivery across 20 conversation turns per session}
+        \resumeItem {Reduced LLM response latency by 50\% with prompt engineering, lightweight RAG strategies, \& backend flow optimizations}
+        \resumeItem{Built a queue-backed discourse memory pipeline to handle overlapping partner utterances, preventing LLM input buffer overflows while preserving conversational context across turns}
+        \resumeItem{Enhanced system reliability by detecting \& handling 8+ distinct runtime failure modes, enforcing schema validation, implementing retries with exponential backoff, structured exception handling, \& custom timeouts}
+        \resumeItem{Expanded observability using Prometheus \& Grafana, increasing logging \& metrics coverage by capturing complete conversation history, \& end-to-end latency for debugging \& performance analysis}
+        \resumeItem{Identified \& resolved monitoring-induced metric inflation, excluding internal endpoints from request instrumentation to prevent scrape feedback loops, minimizing metric noise by ~30\% \& improving accuracy of dashboards \& alerts}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+      \vspace{-10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wipro Ltd.}{July'19 - Aug'22}
+      {\textbf{Senior Software Engineer} $|$ Python, Power BI, AWS, MySQL, Pandas, NumPy, NLTK, OpenCV} {Hyderabad, Telangana}
+      \resumeItemListStart   
+        \resumeItem {Spearheaded production-grade healthcare applications, including multi-screen BI dashboards, automated ICD-10AM coding, \& optimized EHR indexing tools to improve data accessibility \& workflow efficiency}
+        \resumeItem {Engineered scalable data pipelines using APIs, OCR (Tesseract), NLP, and fuzzy matching to process 5,900+ records, 2,000+ EHRs, and 100,000 files with reliable performance and 80\% diagnostic accuracy}
+        \resumeItem{Deployed Alexa Skill Kit–based voice assistants, translating domain requirements into maintainable, user-facing software through close collaboration with cross-functional stakeholders}
+      \resumeItemListEnd
 \resumeSubHeadingListEnd
-
+  \vspace{-10pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Yahoo Inc.}{June'23 - Aug'23}
+      {\textbf{Software Engineer Intern} $|$ Docker, Python, PyCharm, Postman, Git, CI/CD, Unit Testing, Pytest}{Buffalo, New York}
+      \resumeItemListStart
+        \resumeItem {Developed an article display time feature across all Yahoo properties, enhancing SEO and enriching internal CMS editorial capabilities} 
+        \resumeItem {Utilized Docker, Screwdriver CI/CD \& unit testing with Pytest to deploy the feature ensuring reliable testing, deployment, and maintainability}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+    \vspace{-10pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {The Research Foundation of SUNY}{May'23 - Dec'23}
+      {\textbf{Research Assistant} $|$ Rasa, NLU, Hugging Face, AWS, Linux}{Buffalo, New York}
+      \resumeItemListStart
+        \resumeItem {Architected an NLP-based conversational AI chatbot for an NSF-funded project combating disinformation among senior citizens, using Rasa and AWS EC2 \& S3 services}
+        \resumeItem {Integrated LLM from Hugging Face into Rasa to enable neural response generation, advancing research in NLP \& conversational AI for social good}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+  \vspace{-10pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {State University of New York at Buffalo }{Jan'23 - Dec'23}
+      {\textbf{Teaching Assistant} $|$ Apache Solr, GCP, Flask, Web Scraping, Excel}{Buffalo, New York}
+      \resumeItemListStart
+        \resumeItem {Mentored two graduate classes of 65+ \& 80+ students for courses Information Retrieval and NLP \& Text Mining resp.}
+        \resumeItem{Guided students on projects, supervised grading activities, and facilitated in course management \& organization}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+\begin{itemize}
+    \small
+    \item UB CSE Scholarship Recipient, Grace Hopper Celebration, 2023, Academic In-person Sponsor, July'23
+    \vspace{-8pt}
+    \item Member of Senate, GradSWE, UB SUNY, Part of SWE organisation representing diversity in technology, Jan'23
+    \vspace{-8pt}
+    % \item Member, ACM \& DivTech Club, UB SUNY, Part of club events focused on technology, Sept'22
+    % \vspace{-8pt}
+    % \item Volunteer, Women Of Inspiration, Wipro Ltd., Spearheaded in presenting inspiring stories to forefront, IWD, Mar'20
+    % \vspace{-8pt}
+    \item Merit Scholarship Holder, TIET, Featured in top 10\% of the department for exemplary performance
+    \vspace{-8pt}
+    \item Volunteer (Teacher \& Content Writer), Har Hath Kalam, India Association during Aug'16 - Apr'17
+    \vspace{-8pt}
+    \item Outdoor sports enthusiast with numerous accolades in badminton, athletics and swimming
+    \vspace{-8pt}
+\end{itemize}
+\vspace{-10pt}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {International Institute of Information Technology, Naya Raipur}{August 2017 -- June 2021}
-      {Bachelor of Technology in Computer Science}{Naya Raipur, Chhattisgarh India}
+      {State University of New York at Buffalo}{Aug'22 - Dec'23}
+      {Master of Science, Computer Science and Engineering; GPA: 3.7/4.0} {Buffalo, New York}
+      \vspace{-3pt}
+    \resumeSubheading
+      {Thapar Institute of Engineering and Technology}{June'15 - June'19}
+      {Bachelor of Technology, Electronics (Instrumentation and Control) Engineering; GPA: 3.8/4.0} {Patiala, Punjab}
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-        \newResumeSubheading
-            {\textbf{Password Manager System} $|$ \emph{C\#}}{Mar 2025 - Sep 2025}
-            \resumeItemListStart
-                \resumeItem{Extended Password Manager compatibility to VC500-connected VTS devices, enabling secure credential handling across the ecosystem.}
-                \resumeItem{Owned requirement clarification, solution design, and implementation across teams.}
-                \resumeItem{Engineered a robust restart notification framework, improving system observability and reliability.}
-            \resumeItemListEnd
-        \resumeProjectHeading
-            {\textbf{Subjective Refraction Platform} $|$ \emph{C\#, Angular}  $|$ \href{https://www.zeiss.com/vision-care/int/eye-care-professionals/equipment/refraction/combined-refraction-unit.html}{VISUCORE Product Page}}{Jan 2021 - Current}
-            \resumeItemListStart
-                \resumeItem{Owned the development of visual acuity testing module for market releases - R1 and R1.1}
-                \resumeItem{Orchestrated the design of an asynchronous Refraction module, improving workflow performance by 28\%.}
-                \resumeItem{Implemented lock-and-release mutual-exclusion mechanism, improving system stability.}
-                \resumeItem{Introduced atomic command execution guarantees, simplifying concurrent workflows and reducing developer cognitive load.}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    {\item{
-     \textbf{Languages}{: C\#, Python, JavaScript, TypeScript } \\
-     \vspace{1pt}
-     \textbf{Frameworks}{: .NET 8, .NET Framework, ASP.NET, WPF, NUnit, Node.js, gRPC, Angular, React} \\
-     \vspace{1pt}
-     \textbf{Developer Tools}{: Azure, MSBuild, MySQL, SonarQube, Blackduck, IRIUS Risk, Docker, GitHub Actions, CI/CD} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-
-
-%-----------INVOLVEMENT---------------
-\section{Achievements}
-\begin{itemize}[leftmargin=0.2in]
-  \achievementItem{Recognized with the \textbf{Ownership Spirit} award (2025 Zeiss offsite) for leading resolution of high-impact system-blocking customer issues.}
-  \achievementItem{Speaker at FOSS Conference on how Zeiss leverages and contributes to open-source frameworks.}
-  \achievementItem{Contributed to open-source projects including Excalidraw and Microsoft PowerToys.}
-  \achievementItem{Mentored and judged 100+ teams at national hackathons including HackCBS, HackOn, and DotSlash.}
-  \achievementItem{Qualified \textbf{ACM ICPC Regionals} (Top 100 Nationwide across 2019–2020).}
-\end{itemize}
-
-
 \end{document}
-\phantom{}
