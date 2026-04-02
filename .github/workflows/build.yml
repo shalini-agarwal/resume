@@ -37,7 +37,6 @@ jobs:
                   cp *.pdf build/ 
                   cp index.html build/
                   cp ./generators/link-generator.html build/
-                  cp preview.png build/
                   
             - name: Git add
               run: git add resume.pdf
